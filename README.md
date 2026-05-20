@@ -44,6 +44,6 @@
 
 <div align="center">
 
-💬 *Thanks for stopping by — feel free to explore my repositories and connect!*
+💬 *Thanks for stopping by -- feel free to explore my repositories and connect!*
 
 </div>
