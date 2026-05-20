@@ -1,0 +1,127 @@
+<svg xmlns="http://w3.org" viewBox="0 0 800 450" width="100%" style="background: #030303; border-radius: 12px; font-family: monospace; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+  <defs>
+    <!-- Dark, blurry card backdrop to separate text from background rain -->
+    <filter id="card-glow">
+      <feGaussianBlur stdDeviation="15" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Matrix Glowing Green Text Styling -->
+    <filter id="matrix-glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      /* --- Matrix Rain Animation Core --- */
+      .rain-col {
+        fill: #00ff41;
+        font-size: 14px;
+        writing-mode: vertical-rl;
+        text-anchor: start;
+        letter-spacing: 6px;
+        opacity: 0;
+        filter: url(#matrix-glow);
+        animation: fall linear infinite;
+      }
+
+      /* Staggered speeds and delays for an organic, random look */
+      .c1 { animation-duration: 4s;  animation-delay: 0s;   x: 5%; }
+      .c2 { animation-duration: 3s;  animation-delay: 1.5s; x: 15%; opacity: 0.7; font-size: 11px; }
+      .c3 { animation-duration: 5s;  animation-delay: 0.8s; x: 28%; }
+      .c4 { animation-duration: 3.5s; animation-delay: 2.2s; x: 40%; opacity: 0.4; font-size: 12px; }
+      .c5 { animation-duration: 4.5s; animation-delay: 0.3s; x: 62%; }
+      .c6 { animation-duration: 2.8s; animation-delay: 1.9s; x: 73%; opacity: 0.8; font-size: 13px; }
+      .c7 { animation-duration: 5.5s; animation-delay: 1.1s; x: 84%; }
+      .c8 { animation-duration: 3.8s; animation-delay: 0.5s; x: 93%; opacity: 0.5; }
+
+      @keyframes fall {
+        0% {
+          transform: translateY(-450px);
+          opacity: 0;
+        }
+        5% { opacity: 1; }
+        90% { opacity: 1; }
+        100% {
+          transform: translateY(450px);
+          opacity: 0;
+        }
+      }
+
+      /* --- Card Styling --- */
+      .card-bg {
+        fill: rgba(5, 15, 5, 0.75);
+        stroke: rgba(0, 255, 65, 0.25);
+        stroke-width: 1.5;
+      }
+      .card-title {
+        fill: #00ff41;
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        filter: url(#matrix-glow);
+      }
+      .card-body {
+        fill: #a2fca2;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+      }
+      .card-btn-bg {
+        fill: none;
+        stroke: #00ff41;
+        stroke-width: 2;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .card-btn-text {
+        fill: #00ff41;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        letter-spacing: 1px;
+      }
+      .btn-group:hover .card-btn-bg {
+        fill: #00ff41;
+      }
+      .btn-group:hover .card-btn-text {
+        fill: #030303;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Rain Layer -->
+  <g>
+    <text y="-200" class="rain-col c1">ｺﾐｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌ</text>
+    <text y="-200" class="rain-col c2">XYZ0123456789ｱｲｳｴｵ</text>
+    <text y="-200" class="rain-col c3">ﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ9876</text>
+    <text y="-200" class="rain-col c4">ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁ</text>
+    <text y="-200" class="rain-col c5">ﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚ</text>
+    <text y="-200" class="rain-col c6">0123456789ABCDEFGHIJKLMNOP</text>
+    <text y="-200" class="rain-col c7">ﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓ</text>
+    <text y="-200" class="rain-col c8">ﾜﾝｱｲｳｴｵｶｷｸｹｺｻｼｽ</text>
+  </g>
+
+  <!-- Glassmorphic Central Hero Card -->
+  <g transform="translate(200, 100)" filter="url(#card-glow)">
+    <rect width="400" height="250" rx="16" class="card-bg"/>
+    
+    <!-- Content -->
+    <text x="200" y="60" text-anchor:="middle" text-anchor="middle" class="card-title">SYSTEM_ONLINE</text>
+    
+    <text x="200" y="115" text-anchor="middle" class="card-body">The Matrix has you...</text>
+    <text x="200" y="140" text-anchor="middle" class="card-body">This hero component is powered entirely by</text>
+    <text x="200" y="165" text-anchor="middle" class="card-body">a single, self-contained SVG asset vector.</text>
+    
+    <!-- Interactive Button Element -->
+    <g class="btn-group" transform="translate(110, 190)">
+      <rect width="180" height="38" rx="6" class="card-btn-bg"/>
+      <text x="90" y="23" text-anchor="middle" class="card-btn-text">WAKE UP</text>
+    </g>
+  </g>
+</svg>
