@@ -20,19 +20,14 @@
 ## 🧰 Tech Stack
 
 <p>
-  <img src="https://skillicons.dev/icons?i=ts,js,python,go,react,nodejs,aws,docker,postgres,git,github,vscode&perline=6" alt="tech stack" />
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,java,azure,aws,docker,ts,js,python,go,react,nodejs,postgres,git,github,vscode&perline=8" alt="tech stack" />
 </p>
 
 ## 📊 GitHub Stats
 
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=csheldrick&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="github stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=csheldrick&layout=compact&theme=tokyonight&hide_border=true" alt="top languages" />
-
-<img height="170" src="https://streak-stats.demolab.com?user=csheldrick&theme=tokyonight&hide_border=true" alt="github streak" />
-
-</div>
+[![Chris's GitHub stats](https://github-readme-stats.vercel.app/api?username=csheldrick&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true)](https://github.com/csheldrick)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=csheldrick&layout=compact&theme=tokyonight&hide_border=true)](https://github.com/csheldrick)
+[![GitHub Streak](https://streak-stats.demolab.com?user=csheldrick&theme=tokyonight&hide_border=true)](https://github.com/csheldrick)
 
 ## 🏆 Highlights
 
