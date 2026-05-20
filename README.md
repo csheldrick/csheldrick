@@ -25,8 +25,8 @@
 
 ## 📊 GitHub Stats
 
-[![Chris's GitHub stats](https://github-readme-stats.vercel.app/api?username=csheldrick&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=3fb950)](https://github.com/csheldrick)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=csheldrick&layout=compact&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9)](https://github.com/csheldrick)
+[![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=csheldrick&theme=github_dark)](https://github.com/csheldrick)
+[![Top languages by commit](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=csheldrick&theme=github_dark)](https://github.com/csheldrick)
 [![GitHub Streak](https://streak-stats.demolab.com?user=csheldrick&hide_border=true&background=0d1117&ring=58a6ff&fire=3fb950&currStreakLabel=58a6ff&currStreakNum=c9d1d9&sideNums=c9d1d9&sideLabels=8b949e&dates=8b949e)](https://github.com/csheldrick)
 
 ## 🏆 Highlights
