@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/matrix-rain.svg" width="100%" alt="matrix rain header" />
+<img src="./assets/real-matrix-rain.svg" width="100%" alt="matrix rain header" />
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2500&pause=800&color=C9D1D9&center=true&vCenter=true&width=850&lines=Software+Engineer;Open+Source+Builder;Always+Learning+Something+New)](https://git.io/typing-svg)
 
