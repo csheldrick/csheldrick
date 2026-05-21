@@ -2,7 +2,7 @@
 
 <img src="./assets/real-matrix-rain.svg" width="100%" alt="matrix rain header" />
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2500&pause=800&color=C9D1D9&center=true&vCenter=true&width=850&lines=Software+Engineer;Open+Source+Builder;Always+Learning+Something+New)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2500&pause=800&color=C9D1D9&center=true&vCenter=true&width=850&lines=Software+Engineer;Solution+Builder;Always+Learning+Something+New;AI+Enthusiast)](https://git.io/typing-svg)
 
 <p>
   <img src="https://komarev.com/ghpvc/?username=csheldrick&label=Profile%20Views&style=for-the-badge&color=2f3542" alt="profile views" />
@@ -13,14 +13,14 @@
 
 ## ⚡ About Me
 
-- 🔭 I love shipping practical software and clean developer experiences.
+- 🔭 I love shipping new ideas as software.
 - 🌱 I’m always learning more about scalable systems and modern tooling.
 - 🤝 Open to collaboration on impactful open-source projects.
 
 ## 🧰 Tech Stack
 
 <p>
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,java,azure,aws,docker,ts,js,python,go,react,nodejs,postgres,git,github,vscode&perline=8" alt="tech stack" />
+  <img src="https://skillicons.dev/icons?i=cpp,cs,dotnet,java,azure,aws,docker,ts,js,python,go,react,nodejs,postgres,git,github,vscode&perline=8" alt="tech stack" />
 </p>
 
 ## 📊 GitHub Stats
