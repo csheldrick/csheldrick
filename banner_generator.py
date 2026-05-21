@@ -8,16 +8,16 @@ Commit the output banner.svg to your repo and reference it in README.md:
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
 
-NAME        = "Chris Sheldrick"
-SUBTITLE    = "SOFTWARE ENGINEER • OPEN SOURCE BUILDER"
+NAME        = "csheldrick"
+SUBTITLE    = ""
 OUTPUT      = "banner.svg"
 
 WIDTH       = 1200
 HEIGHT      = 260
 
-COL_SPACING = 14        # px between columns; lower = denser
-COL_X_START = 10
-COL_X_END   = WIDTH - 20
+COL_SPACING = 10        # px between columns; lower = denser
+COL_X_START = 5
+COL_X_END   = WIDTH - 10
 
 # Fraction of columns that travel upward (0.0 = all down, 0.2 = 1 in 5 up)
 UP_FRACTION = 0.0
@@ -27,17 +27,27 @@ UP_FRACTION = 0.0
 # Classes: d=dim (.22 opacity), m=mid (.42), b=bright (.78)
 
 STREAMS = [
-    ("d", ["0","1","ｱ","4","ﾂ","0","ﾗ","7","ｵ","1","ﾖ","0","ﾜ"]),
-    ("m", ["ﾈ","1","0","6","ｶ","1","ﾐ","8","ｺ","0","ﾑ","3","ｴ"]),
-    ("b", ["1","ﾊ","0","5","ｼ","1","ﾘ","9","ﾜ","0","ﾀ","7","ｸ"]),
+    ("d", ["0","1","ア","4","ツ","0","ラ","7","オ","1","ヨ","0","ワ"]),
+    ("m", ["ネ","1","0","6","カ","1","ミ","8","コ","0","ム","3","エ"]),
+    ("b", ["1","ハ","0","5","シ","1","リ","9","ワ","0","タ","7","ク"]),
 ]
 
 # Animation variation pools (cycled across columns)
-Y_OFFSETS = [-500,-520,-540,-560,-580,-600,-620,-510,-530,-550,-570,-590,-610]
-BEGINS    = [-1.2,-2.3,-3.4,-4.5,-5.6,-6.1,-1.8,-2.9,-4.0,-5.1,-6.2,-1.5,-3.7,
-             -2.6,-4.8,-5.3,-1.1,-3.2,-6.0,-2.0,-4.3,-1.7,-5.8,-3.6,-6.4,-2.1,
-             -4.6,-1.4,-5.9,-3.0]
+#Y_OFFSETS = [-500,-520,-540,-560,-580,-600,-620,-510,-530,-550,-570,-590,-610]
+Y_OFFSETS = list(range(-500, -1000, -20))
+Y_OFFSETS += list(range(-990, -1000, 20))
+
+# -1.1 x 4, -.5
+BEGINS    = [
+	-1.2, -2.3, -3.4, -4.5, -5.6, -6.1,
+	-1.8, -2.9, -4.0, -5.1, -6.2, -1.5,
+	-3.7, -2.6, -4.8, -5.3, -1.1, -3.2, 
+	-6.0, -2.0, -4.3, -1.7, -5.8, -3.6, 
+	-6.4, -2.1, -4.6, -1.4, -5.9, -3.0
+]
+BEGINS += BEGINS[::-1][1:]
 DURATIONS = [6.7, 6.8, 6.9, 7.0, 7.1, 7.2, 7.3, 7.4, 7.5]
+DURATIONS += DURATIONS[::-1][1:]
 
 # ── TEMPLATE HELPERS ─────────────────────────────────────────────────────────
 
@@ -120,7 +130,7 @@ svg = f'''<svg width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" 
   </g>
 </svg>'''
 
-with open(OUTPUT, "w") as f:
-    f.write(svg)
+with open(OUTPUT, "wb") as f:
+    f.write(svg.encode())
 
 print(f"Written {OUTPUT} ({len(cols)} columns, spacing={COL_SPACING}px)")
