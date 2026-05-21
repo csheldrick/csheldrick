@@ -1,83 +1,75 @@
-<svg viewBox="0 0 800 400" width="100%" height="400" xmlns="http://w3.org" style="background:#000; border-radius:12px; font-family:monospace; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
+<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dense matrix rain background">
   <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020406"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.05" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
     <!-- Glowing text effect -->
-    <filter id="glow">
+    <!-- <filter id="glow">
       <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
-    </filter>
+    </filter> 
+    -->
   </defs>
 
+  <rect width="1200" height="260" fill="url(#bg)"/>
   <!-- MATRIX RAIN COLUMNS -->
   <!-- Each group represents a column dropping at a different speed and delay -->
-  <g font-size="14" fill="#0f0" opacity="0.8">
-    <text x="40" y="-20">
-      <animate attributeName="y" from="-20" to="420" dur="3s" repeatCount="indefinite" begin="0s"/>
-      0 1 1 0 1 0 1 1 0 0 1 0
-    </text>
-    <text x="120" y="-20">
-      <animate attributeName="y" from="-20" to="420" dur="4.5s" repeatCount="indefinite" begin="0.5s"/>
-      1 0 0 1 1 0 1 0 0 1 1 1
-    </text>
-    <text x="200" y="-20">
-      <animate attributeName="y" from="-20" to="420" dur="2.5s" repeatCount="indefinite" begin="1.2s"/>
-      X Y Z 9 8 2 A B 4 7 C K
-    </text>
-    <text x="280" y="-20">
-      <animate attributeName="y" from="-20" to="420" dur="5s" repeatCount="indefinite" begin="0.2s"/>
-      0 1 0 0 1 1 0 1 0 1 1 0
-    </text>
-    <text x="360" y="-20">
-      <animate attributeName="y" from="-20" to="420" dur="3.5s" repeatCount="indefinite" begin="1.8s"/>
-      ｱ ｲ ｳ ｴ ｵ ｶ ｷ ｸ ｹ ｺ ｻ ｼ
-    </text>
-    <text x="440" y="-20">
-      <animate attributeName="y" from="-20" to="420" dur="2.8s" repeatCount="indefinite" begin="0.7s"/>
-      1 1 0 1 0 0 1 0 1 1 0 1
-    </text>
-    <text x="520" y="-20">
-      <animate attributeName="y" from="-20" to="420" dur="4s" repeatCount="indefinite" begin="2.3s"/>
-      M A T R I X R A I N 1 0
-    </text>
-    <text x="600" y="-20">
-      <animate attributeName="y" from="-20" to="420" dur="3.2s" repeatCount="indefinite" begin="1.5s"/>
-      0 0 1 1 0 1 0 0 1 1 0 1
-    </text>
-    <text x="680" y="-20">
-      <animate attributeName="y" from="-20" to="420" dur="5.5s" repeatCount="indefinite" begin="0s"/>
-      ｱ ｶ ｻ ﾀ ﾅ ﾊ ﾏ ﾔ ﾗ ﾜ ﾝ 2
-    </text>
-    <text x="760" y="-20">
-      <animate attributeName="y" from="-20" to="420" dur="2.2s" repeatCount="indefinite" begin="0.9s"/>
-      1 0 1 1 0 0 1 0 1 0 1 1
-    </text>
+
+  <g font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="14" font-weight="500" filter="url(#glow)">
+    <text x="10" y="-180" fill="#7ee787" opacity="0.44">0 1 0 1 ｱ ｲ ｳ ｴ ｵ 1 0 1 0 1 ｶ ｷ ｸ ｹ ｺ 1 0 1<animate attributeName="y" from="-180" to="350" dur="5.6s" repeatCount="indefinite"/></text>
+    <text x="42" y="-30" fill="#79ff96" opacity="0.52">1 0 1 0 1 0 ｻ ｼ ｽ ｾ ｿ 0 1 0 1 ﾀ ﾁ ﾂ ﾃ ﾄ 1 0<animate attributeName="y" from="-30" to="350" dur="4.7s" repeatCount="indefinite"/></text>
+    <text x="74" y="-220" fill="#56d364" opacity="0.42">0 1 1 0 1 0 1 0 ﾅ ﾆ ﾇ ﾈ ﾉ 0 1 0 1 1 0 1 0<animate attributeName="y" from="-220" to="350" dur="6.3s" repeatCount="indefinite"/></text>
+    <text x="106" y="-90" fill="#7ee787" opacity="0.47">1 0 0 1 0 1 0 1 ﾊ ﾋ ﾌ ﾍ ﾎ 1 0 1 0 0 1 0<animate attributeName="y" from="-90" to="350" dur="5.2s" repeatCount="indefinite"/></text>
+    <text x="138" y="-160" fill="#79ff96" opacity="0.58">0 1 0 0 1 1 0 1 ﾏ ﾐ ﾑ ﾒ ﾓ 0 1 0 0 1 1 0<animate attributeName="y" from="-160" to="350" dur="5.8s" repeatCount="indefinite"/></text>
+    <text x="170" y="-20" fill="#56d364" opacity="0.45">1 0 1 1 0 0 1 0 ﾔ ﾕ ﾖ 1 0 1 1 0 0 1 0 1<animate attributeName="y" from="-20" to="350" dur="4.6s" repeatCount="indefinite"/></text>
+    <text x="202" y="-210" fill="#7ee787" opacity="0.44">0 1 0 1 1 0 0 1 ﾗ ﾘ ﾙ ﾚ ﾛ 0 1 0 1 1 0 0<animate attributeName="y" from="-210" to="350" dur="6.4s" repeatCount="indefinite"/></text>
+    <text x="234" y="-70" fill="#79ff96" opacity="0.56">1 0 0 1 1 0 1 0 ﾜ ﾝ 0 1 0 0 1 1 0 1 0 1<animate attributeName="y" from="-70" to="350" dur="5.1s" repeatCount="indefinite"/></text>
+    <text x="266" y="-140" fill="#56d364" opacity="0.43">0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1<animate attributeName="y" from="-140" to="350" dur="5.5s" repeatCount="indefinite"/></text>
+    <text x="298" y="-190" fill="#7ee787" opacity="0.46">1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0<animate attributeName="y" from="-190" to="350" dur="6.2s" repeatCount="indefinite"/></text>
+    <text x="330" y="-60" fill="#79ff96" opacity="0.54">0 0 1 1 0 0 1 1 ｱ ｶ ｻ ﾀ ﾅ ﾊ ﾏ ﾗ ﾜ 1 0 1<animate attributeName="y" from="-60" to="350" dur="5s" repeatCount="indefinite"/></text>
+    <text x="362" y="-240" fill="#56d364" opacity="0.41">1 1 0 0 1 1 0 0 ｲ ｷ ｼ ﾁ ﾆ ﾋ ﾐ ﾘ 1 0 0 1<animate attributeName="y" from="-240" to="350" dur="6.8s" repeatCount="indefinite"/></text>
+    <text x="394" y="-120" fill="#7ee787" opacity="0.49">0 1 1 0 0 1 1 0 ｳ ｸ ｽ ﾂ ﾇ ﾌ ﾑ ﾙ 0 1 1 0<animate attributeName="y" from="-120" to="350" dur="5.7s" repeatCount="indefinite"/></text>
+    <text x="426" y="-15" fill="#79ff96" opacity="0.57">1 0 0 1 1 0 0 1 ｴ ｹ ｾ ﾃ ﾈ ﾍ ﾒ ﾚ 1 0 0 1<animate attributeName="y" from="-15" to="350" dur="4.5s" repeatCount="indefinite"/></text>
+    <text x="458" y="-170" fill="#56d364" opacity="0.42">0 1 0 1 1 1 0 0 ｵ ｺ ｿ ﾄ ﾉ ﾎ ﾓ ﾛ 0 1 0 1<animate attributeName="y" from="-170" to="350" dur="6s" repeatCount="indefinite"/></text>
+    <text x="490" y="-100" fill="#7ee787" opacity="0.48">1 0 1 0 0 0 1 1 0 1 1 0 0 0 1 1 0 1 1 0<animate attributeName="y" from="-100" to="350" dur="5.4s" repeatCount="indefinite"/></text>
+    <text x="522" y="-205" fill="#79ff96" opacity="0.55">0 1 0 0 1 1 0 1 1 0 0 1 1 0 1 0 0 1 1 0<animate attributeName="y" from="-205" to="350" dur="6.5s" repeatCount="indefinite"/></text>
+    <text x="554" y="-40" fill="#56d364" opacity="0.44">1 0 1 1 0 1 0 0 1 1 0 1 0 0 1 1 0 1 0 0<animate attributeName="y" from="-40" to="350" dur="4.8s" repeatCount="indefinite"/></text>
+    <text x="586" y="-155" fill="#7ee787" opacity="0.47">0 1 1 0 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0<animate attributeName="y" from="-155" to="350" dur="5.9s" repeatCount="indefinite"/></text>
+    <text x="618" y="-85" fill="#79ff96" opacity="0.56">1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 1 0 0 1<animate attributeName="y" from="-85" to="350" dur="5.3s" repeatCount="indefinite"/></text>
+    <text x="650" y="-230" fill="#56d364" opacity="0.41">0 1 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 1 0<animate attributeName="y" from="-230" to="350" dur="6.9s" repeatCount="indefinite"/></text>
+    <text x="682" y="-65" fill="#7ee787" opacity="0.5">1 0 0 1 1 0 0 1 0 1 0 1 1 0 0 1 0 1 0 1<animate attributeName="y" from="-65" to="350" dur="4.9s" repeatCount="indefinite"/></text>
+    <text x="714" y="-180" fill="#79ff96" opacity="0.58">0 1 0 1 0 0 1 1 0 1 0 1 0 0 1 1 0 1 0 1<animate attributeName="y" from="-180" to="350" dur="6.1s" repeatCount="indefinite"/></text>
+    <text x="746" y="-25" fill="#56d364" opacity="0.44">1 0 1 0 1 1 0 0 1 0 1 0 1 1 0 0 1 0 1 0<animate attributeName="y" from="-25" to="350" dur="4.7s" repeatCount="indefinite"/></text>
+    <text x="778" y="-135" fill="#7ee787" opacity="0.49">0 1 1 0 1 0 1 0 0 1 1 0 1 0 1 0 0 1 1 0<animate attributeName="y" from="-135" to="350" dur="5.6s" repeatCount="indefinite"/></text>
+    <text x="810" y="-200" fill="#79ff96" opacity="0.55">1 0 0 1 0 1 0 1 1 0 0 1 0 1 0 1 1 0 0 1<animate attributeName="y" from="-200" to="350" dur="6.6s" repeatCount="indefinite"/></text>
+    <text x="842" y="-55" fill="#56d364" opacity="0.43">0 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 1 0 0<animate attributeName="y" from="-55" to="350" dur="5s" repeatCount="indefinite"/></text>
+    <text x="874" y="-165" fill="#7ee787" opacity="0.48">1 0 1 1 0 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1<animate attributeName="y" from="-165" to="350" dur="5.8s" repeatCount="indefinite"/></text>
+    <text x="906" y="-95" fill="#79ff96" opacity="0.57">0 1 0 1 1 0 0 1 0 1 0 1 1 0 0 1 0 1 0 1<animate attributeName="y" from="-95" to="350" dur="5.2s" repeatCount="indefinite"/></text>
+    <text x="938" y="-215" fill="#56d364" opacity="0.42">1 0 0 1 0 0 1 1 1 0 0 1 0 0 1 1 1 0 0 1<animate attributeName="y" from="-215" to="350" dur="6.7s" repeatCount="indefinite"/></text>
+    <text x="970" y="-35" fill="#7ee787" opacity="0.5">0 1 1 0 1 1 0 0 0 1 1 0 1 1 0 0 0 1 1 0<animate attributeName="y" from="-35" to="350" dur="4.8s" repeatCount="indefinite"/></text>
+    <text x="1002" y="-145" fill="#79ff96" opacity="0.54">1 0 1 0 0 1 1 0 1 0 1 0 0 1 1 0 1 0 1 0<animate attributeName="y" from="-145" to="350" dur="5.7s" repeatCount="indefinite"/></text>
+    <text x="1034" y="-75" fill="#56d364" opacity="0.43">0 1 0 1 1 0 1 0 0 1 0 1 1 0 1 0 0 1 0 1<animate attributeName="y" from="-75" to="350" dur="5.1s" repeatCount="indefinite"/></text>
+    <text x="1066" y="-190" fill="#7ee787" opacity="0.47">1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1<animate attributeName="y" from="-190" to="350" dur="6.2s" repeatCount="indefinite"/></text>
+    <text x="1098" y="-50" fill="#79ff96" opacity="0.55">0 1 1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1 1 0<animate attributeName="y" from="-50" to="350" dur="4.9s" repeatCount="indefinite"/></text>
+    <text x="1130" y="-165" fill="#56d364" opacity="0.42">1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0<animate attributeName="y" from="-165" to="350" dur="5.9s" repeatCount="indefinite"/></text>
+    <text x="1162" y="-115" fill="#7ee787" opacity="0.46">0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1<animate attributeName="y" from="-115" to="350" dur="5.4s" repeatCount="indefinite"/></text>
   </g>
 
-  <!-- DARK TRANSPARENT OVERLAY (To make center text readable) -->
-  <rect x="0" y="0" width="100%" height="100%" fill="black" opacity="0.5" />
+  <rect width="1200" height="260" fill="#0d1117" opacity="0.12"/>
 
-  <!-- HERO CARD CONTENT -->
-  <g text-anchor="middle">
-    <!-- Title -->
-    <text x="400" y="180" fill="#00ff00" font-size="32" font-weight="bold" filter="url(#glow)">
-      WELCOME TO THE MATRIX
-    </text>
-    
-    <!-- Subtitle -->
-    <text x="400" y="220" fill="#cccccc" font-size="16" letter-spacing="2">
-      Follow the white rabbit.
-    </text>
-
-    <!-- Interactive/Animated Button Frame -->
-    <rect x="325" y="260" width="150" height="45" rx="5" fill="none" stroke="#00ff00" stroke-width="2" filter="url(#glow)">
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
-    </rect>
-    
-    <!-- Button Text -->
-    <text x="400" y="288" fill="#00ff00" font-size="14" font-weight="bold" letter-spacing="1" cursor="pointer">
-      ENTER
-    </text>
+  <g font-family="'JetBrains Mono', 'Fira Code', monospace" text-anchor="middle">
+    <text x="600" y="132" font-size="50" font-weight="700" fill="#c9d1d9" opacity="0.96">Chris Sheldrick</text>
+    <text x="600" y="162" font-size="14" font-weight="500" fill="#8b949e" opacity="0.95">Software Engineer • Open Source Builder</text>
   </g>
 </svg>
