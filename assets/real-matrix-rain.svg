@@ -1,0 +1,553 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020406"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <filter id="g" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1"/>
+    </filter>
+    <style>
+      .r { font-family: monospace; font-size: 13px; fill: #7ee787; filter: url(#g); }
+      .d { opacity: .22; }
+      .m { opacity: .42; }
+      .b { opacity: .78; }
+      .t { font-family: monospace; }
+    </style>
+    <g id="s1">
+      <text class="r d">
+        <tspan x="0" dy="0">0</tspan>
+        <tspan x="0" dy="13">1</tspan>
+        <tspan x="0" dy="13">ア</tspan>
+        <tspan x="0" dy="13">4</tspan>
+        <tspan x="0" dy="13">ツ</tspan>
+        <tspan x="0" dy="13">0</tspan>
+        <tspan x="0" dy="13">ラ</tspan>
+        <tspan x="0" dy="13">7</tspan>
+        <tspan x="0" dy="13">オ</tspan>
+        <tspan x="0" dy="13">1</tspan>
+        <tspan x="0" dy="13">ヨ</tspan>
+        <tspan x="0" dy="13">0</tspan>
+        <tspan x="0" dy="13">ワ</tspan>
+      </text>
+    </g>
+    <g id="s2">
+      <text class="r m">
+        <tspan x="0" dy="0">ネ</tspan>
+        <tspan x="0" dy="13">1</tspan>
+        <tspan x="0" dy="13">0</tspan>
+        <tspan x="0" dy="13">6</tspan>
+        <tspan x="0" dy="13">カ</tspan>
+        <tspan x="0" dy="13">1</tspan>
+        <tspan x="0" dy="13">ミ</tspan>
+        <tspan x="0" dy="13">8</tspan>
+        <tspan x="0" dy="13">コ</tspan>
+        <tspan x="0" dy="13">0</tspan>
+        <tspan x="0" dy="13">ム</tspan>
+        <tspan x="0" dy="13">3</tspan>
+        <tspan x="0" dy="13">エ</tspan>
+      </text>
+    </g>
+    <g id="s3">
+      <text class="r b">
+        <tspan x="0" dy="0">1</tspan>
+        <tspan x="0" dy="13">ハ</tspan>
+        <tspan x="0" dy="13">0</tspan>
+        <tspan x="0" dy="13">5</tspan>
+        <tspan x="0" dy="13">シ</tspan>
+        <tspan x="0" dy="13">1</tspan>
+        <tspan x="0" dy="13">リ</tspan>
+        <tspan x="0" dy="13">9</tspan>
+        <tspan x="0" dy="13">ワ</tspan>
+        <tspan x="0" dy="13">0</tspan>
+        <tspan x="0" dy="13">タ</tspan>
+        <tspan x="0" dy="13">7</tspan>
+        <tspan x="0" dy="13">ク</tspan>
+      </text>
+    </g>
+  </defs>
+  <rect width="1200" height="260" fill="url(#bg)"/>
+  <g transform="translate(5 -500)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="5 -500;5 320" dur="6.7s" begin="-1.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(15 -520)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="15 -520;15 320" dur="6.8s" begin="-2.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(25 -540)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="25 -540;25 320" dur="6.9s" begin="-3.4s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(35 -560)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="35 -560;35 320" dur="7.0s" begin="-4.5s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(45 -580)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="45 -580;45 320" dur="7.1s" begin="-5.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(55 -600)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="55 -600;55 320" dur="7.2s" begin="-6.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(65 -620)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="65 -620;65 320" dur="7.3s" begin="-1.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(75 -640)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="75 -640;75 320" dur="7.4s" begin="-2.9s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(85 -660)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="85 -660;85 320" dur="7.5s" begin="-4.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(95 -680)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="95 -680;95 320" dur="7.4s" begin="-5.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(105 -700)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="105 -700;105 320" dur="7.3s" begin="-6.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(115 -720)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="115 -720;115 320" dur="7.2s" begin="-1.5s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(125 -740)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="125 -740;125 320" dur="7.1s" begin="-3.7s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(135 -760)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="135 -760;135 320" dur="7.0s" begin="-2.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(145 -780)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="145 -780;145 320" dur="6.9s" begin="-4.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(155 -800)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="155 -800;155 320" dur="6.8s" begin="-5.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(165 -820)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="165 -820;165 320" dur="6.7s" begin="-1.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(175 -840)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="175 -840;175 320" dur="6.7s" begin="-3.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(185 -860)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="185 -860;185 320" dur="6.8s" begin="-6.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(195 -880)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="195 -880;195 320" dur="6.9s" begin="-2.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(205 -900)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="205 -900;205 320" dur="7.0s" begin="-4.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(215 -920)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="215 -920;215 320" dur="7.1s" begin="-1.7s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(225 -940)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="225 -940;225 320" dur="7.2s" begin="-5.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(235 -960)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="235 -960;235 320" dur="7.3s" begin="-3.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(245 -980)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="245 -980;245 320" dur="7.4s" begin="-6.4s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(255 -500)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="255 -500;255 320" dur="7.5s" begin="-2.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(265 -520)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="265 -520;265 320" dur="7.4s" begin="-4.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(275 -540)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="275 -540;275 320" dur="7.3s" begin="-1.4s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(285 -560)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="285 -560;285 320" dur="7.2s" begin="-5.9s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(295 -580)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="295 -580;295 320" dur="7.1s" begin="-3.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(305 -600)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="305 -600;305 320" dur="7.0s" begin="-5.9s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(315 -620)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="315 -620;315 320" dur="6.9s" begin="-1.4s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(325 -640)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="325 -640;325 320" dur="6.8s" begin="-4.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(335 -660)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="335 -660;335 320" dur="6.7s" begin="-2.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(345 -680)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="345 -680;345 320" dur="6.7s" begin="-6.4s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(355 -700)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="355 -700;355 320" dur="6.8s" begin="-3.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(365 -720)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="365 -720;365 320" dur="6.9s" begin="-5.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(375 -740)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="375 -740;375 320" dur="7.0s" begin="-1.7s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(385 -760)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="385 -760;385 320" dur="7.1s" begin="-4.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(395 -780)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="395 -780;395 320" dur="7.2s" begin="-2.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(405 -800)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="405 -800;405 320" dur="7.3s" begin="-6.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(415 -820)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="415 -820;415 320" dur="7.4s" begin="-3.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(425 -840)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="425 -840;425 320" dur="7.5s" begin="-1.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(435 -860)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="435 -860;435 320" dur="7.4s" begin="-5.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(445 -880)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="445 -880;445 320" dur="7.3s" begin="-4.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(455 -900)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="455 -900;455 320" dur="7.2s" begin="-2.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(465 -920)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="465 -920;465 320" dur="7.1s" begin="-3.7s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(475 -940)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="475 -940;475 320" dur="7.0s" begin="-1.5s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(485 -960)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="485 -960;485 320" dur="6.9s" begin="-6.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(495 -980)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="495 -980;495 320" dur="6.8s" begin="-5.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(505 -500)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="505 -500;505 320" dur="6.7s" begin="-4.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(515 -520)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="515 -520;515 320" dur="6.7s" begin="-2.9s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(525 -540)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="525 -540;525 320" dur="6.8s" begin="-1.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(535 -560)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="535 -560;535 320" dur="6.9s" begin="-6.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(545 -580)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="545 -580;545 320" dur="7.0s" begin="-5.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(555 -600)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="555 -600;555 320" dur="7.1s" begin="-4.5s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(565 -620)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="565 -620;565 320" dur="7.2s" begin="-3.4s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(575 -640)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="575 -640;575 320" dur="7.3s" begin="-2.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(585 -660)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="585 -660;585 320" dur="7.4s" begin="-1.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(595 -680)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="595 -680;595 320" dur="7.5s" begin="-1.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(605 -700)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="605 -700;605 320" dur="7.4s" begin="-2.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(615 -720)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="615 -720;615 320" dur="7.3s" begin="-3.4s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(625 -740)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="625 -740;625 320" dur="7.2s" begin="-4.5s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(635 -760)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="635 -760;635 320" dur="7.1s" begin="-5.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(645 -780)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="645 -780;645 320" dur="7.0s" begin="-6.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(655 -800)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="655 -800;655 320" dur="6.9s" begin="-1.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(665 -820)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="665 -820;665 320" dur="6.8s" begin="-2.9s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(675 -840)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="675 -840;675 320" dur="6.7s" begin="-4.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(685 -860)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="685 -860;685 320" dur="6.7s" begin="-5.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(695 -880)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="695 -880;695 320" dur="6.8s" begin="-6.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(705 -900)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="705 -900;705 320" dur="6.9s" begin="-1.5s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(715 -920)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="715 -920;715 320" dur="7.0s" begin="-3.7s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(725 -940)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="725 -940;725 320" dur="7.1s" begin="-2.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(735 -960)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="735 -960;735 320" dur="7.2s" begin="-4.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(745 -980)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="745 -980;745 320" dur="7.3s" begin="-5.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(755 -500)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="755 -500;755 320" dur="7.4s" begin="-1.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(765 -520)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="765 -520;765 320" dur="7.5s" begin="-3.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(775 -540)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="775 -540;775 320" dur="7.4s" begin="-6.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(785 -560)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="785 -560;785 320" dur="7.3s" begin="-2.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(795 -580)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="795 -580;795 320" dur="7.2s" begin="-4.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(805 -600)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="805 -600;805 320" dur="7.1s" begin="-1.7s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(815 -620)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="815 -620;815 320" dur="7.0s" begin="-5.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(825 -640)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="825 -640;825 320" dur="6.9s" begin="-3.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(835 -660)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="835 -660;835 320" dur="6.8s" begin="-6.4s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(845 -680)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="845 -680;845 320" dur="6.7s" begin="-2.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(855 -700)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="855 -700;855 320" dur="6.7s" begin="-4.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(865 -720)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="865 -720;865 320" dur="6.8s" begin="-1.4s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(875 -740)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="875 -740;875 320" dur="6.9s" begin="-5.9s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(885 -760)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="885 -760;885 320" dur="7.0s" begin="-3.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(895 -780)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="895 -780;895 320" dur="7.1s" begin="-5.9s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(905 -800)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="905 -800;905 320" dur="7.2s" begin="-1.4s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(915 -820)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="915 -820;915 320" dur="7.3s" begin="-4.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(925 -840)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="925 -840;925 320" dur="7.4s" begin="-2.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(935 -860)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="935 -860;935 320" dur="7.5s" begin="-6.4s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(945 -880)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="945 -880;945 320" dur="7.4s" begin="-3.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(955 -900)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="955 -900;955 320" dur="7.3s" begin="-5.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(965 -920)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="965 -920;965 320" dur="7.2s" begin="-1.7s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(975 -940)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="975 -940;975 320" dur="7.1s" begin="-4.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(985 -960)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="985 -960;985 320" dur="7.0s" begin="-2.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(995 -980)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="995 -980;995 320" dur="6.9s" begin="-6.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1005 -500)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="1005 -500;1005 320" dur="6.8s" begin="-3.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1015 -520)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="1015 -520;1015 320" dur="6.7s" begin="-1.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1025 -540)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="1025 -540;1025 320" dur="6.7s" begin="-5.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1035 -560)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="1035 -560;1035 320" dur="6.8s" begin="-4.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1045 -580)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="1045 -580;1045 320" dur="6.9s" begin="-2.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1055 -600)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="1055 -600;1055 320" dur="7.0s" begin="-3.7s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1065 -620)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="1065 -620;1065 320" dur="7.1s" begin="-1.5s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1075 -640)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="1075 -640;1075 320" dur="7.2s" begin="-6.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1085 -660)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="1085 -660;1085 320" dur="7.3s" begin="-5.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1095 -680)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="1095 -680;1095 320" dur="7.4s" begin="-4.0s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1105 -700)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="1105 -700;1105 320" dur="7.5s" begin="-2.9s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1115 -720)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="1115 -720;1115 320" dur="7.4s" begin="-1.8s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1125 -740)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="1125 -740;1125 320" dur="7.3s" begin="-6.1s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1135 -760)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="1135 -760;1135 320" dur="7.2s" begin="-5.6s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1145 -780)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="1145 -780;1145 320" dur="7.1s" begin="-4.5s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1155 -800)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="1155 -800;1155 320" dur="7.0s" begin="-3.4s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1165 -820)">
+    <use href="#s3"/>
+    <animateTransform attributeName="transform" type="translate" values="1165 -820;1165 320" dur="6.9s" begin="-2.3s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1175 -840)">
+    <use href="#s1"/>
+    <animateTransform attributeName="transform" type="translate" values="1175 -840;1175 320" dur="6.8s" begin="-1.2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(1185 -860)">
+    <use href="#s2"/>
+    <animateTransform attributeName="transform" type="translate" values="1185 -860;1185 320" dur="6.7s" begin="-1.2s" repeatCount="indefinite"/>
+  </g>
+  <rect width="1200" height="260" fill="#0d1117" opacity=".10"/>
+  <g class="t" text-anchor="middle">
+    <text x="600" y="123"
+      font-size="52" font-weight="700" fill="#f0f6fc" opacity=".96">csheldrick</text>
+    <text x="600" y="157"
+      font-size="14" font-weight="500" fill="#8b949e" letter-spacing="2" opacity=".95"></text>
+  </g>
+</svg>
