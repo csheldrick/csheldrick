@@ -30,9 +30,9 @@ jobs:
       - name: Generate GitHub signal
         env:
           PROFILE_USER: csheldrick
-          # A custom token is optional. The repository token is enough for the
-          # public-only stats this panel is designed to expose.
-          GH_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
+          # Deliberately use only this repository's token. The panel is meant
+          # to describe public GitHub activity, never private repository data.
+          GH_TOKEN: ${{ github.token }}
         run: python scripts/generate_profile_stats.py
 
       - name: Commit refreshed signal
