@@ -7,9 +7,15 @@ on:
   push:
     branches:
       - main
-      - profile/include-private-signal
+      - profile/merge-activity-signal
     paths:
-      - scripts/generate_profile_stats.py
+      - scripts/profile_signal.py
+      - .github/workflows/profile-signal.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - scripts/profile_signal.py
       - .github/workflows/profile-signal.yml
 
 permissions:
@@ -30,13 +36,12 @@ jobs:
       - name: Generate GitHub signal
         env:
           PROFILE_USER: csheldrick
-          # If PROFILE_STATS_TOKEN exists, aggregate private repo activity too.
-          # Private repo names/URLs are never rendered into the public SVG.
           GH_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
           PROFILE_PRIVATE: ${{ secrets.PROFILE_STATS_TOKEN != '' && '1' || '0' }}
-        run: python scripts/generate_profile_stats.py
+        run: python scripts/profile_signal.py
 
       - name: Commit refreshed signal
+        if: github.event_name != 'pull_request'
         shell: bash
         run: |
           if git diff --quiet -- assets/github-signal.svg; then
@@ -48,3 +53,9 @@ jobs:
           git add assets/github-signal.svg
           git commit -m "chore: refresh profile signal [skip ci]"
           git push
+
+      - name: Verify render changed on PR
+        if: github.event_name == 'pull_request'
+        run: |
+          test -s assets/github-signal.svg
+          grep -q "MERGE SIGNAL" assets/github-signal.svg
