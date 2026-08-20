@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Generate a self-contained SVG profile panel from GitHub API data.
 
-The panel intentionally uses public GitHub data only. A broader token can be
-supplied via GH_TOKEN, but repository names from private data are never queried
-or rendered by this script.
+When PROFILE_PRIVATE=1 and GH_TOKEN can read private repositories, private
+activity is included only in aggregate counts and language totals. Private
+repository names, descriptions, URLs and individual activity are never rendered.
 """
 
 from __future__ import annotations
@@ -23,6 +23,7 @@ API = "https://api.github.com"
 GRAPHQL = "https://api.github.com/graphql"
 USER = os.environ.get("PROFILE_USER", "csheldrick")
 TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
+PRIVATE_MODE = os.environ.get("PROFILE_PRIVATE", "").lower() in {"1", "true", "yes"}
 OUTPUT = Path(os.environ.get("PROFILE_OUTPUT", "assets/github-signal.svg"))
 
 HEADERS = {
@@ -69,9 +70,7 @@ def paged(path: str, params: dict[str, str | int] | None = None, pages: int = 10
 
 def search_total(query: str) -> int:
     result = api("/search/issues", {"q": query, "per_page": 1})
-    if isinstance(result, dict):
-        return int(result.get("total_count", 0))
-    return 0
+    return int(result.get("total_count", 0)) if isinstance(result, dict) else 0
 
 
 def graphql_contributions(start: dt.datetime, end: dt.datetime) -> tuple[dict[str, int], dict[str, int]] | None:
@@ -88,9 +87,7 @@ def graphql_contributions(start: dt.datetime, end: dt.datetime) -> tuple[dict[st
           restrictedContributionsCount
           contributionCalendar {
             totalContributions
-            weeks {
-              contributionDays { date contributionCount }
-            }
+            weeks { contributionDays { date contributionCount } }
           }
         }
       }
@@ -110,17 +107,18 @@ def graphql_contributions(start: dt.datetime, end: dt.datetime) -> tuple[dict[st
             return None
         collection = result["data"]["user"]["contributionsCollection"]
         calendar = collection["contributionCalendar"]
-        days: dict[str, int] = {}
-        for week in calendar["weeks"]:
-            for day in week["contributionDays"]:
-                days[day["date"]] = int(day["contributionCount"])
+        days = {
+            day["date"]: int(day["contributionCount"])
+            for week in calendar["weeks"]
+            for day in week["contributionDays"]
+        }
         totals = {
             "total": int(calendar["totalContributions"]),
             "commits": int(collection["totalCommitContributions"]),
             "issues": int(collection["totalIssueContributions"]),
             "prs": int(collection["totalPullRequestContributions"]),
             "reviews": int(collection["totalPullRequestReviewContributions"]),
-            "private": int(collection["restrictedContributionsCount"]),
+            "restricted": int(collection["restrictedContributionsCount"]),
         }
         return totals, days
     except (KeyError, TypeError, urllib.error.HTTPError, urllib.error.URLError, TimeoutError):
@@ -128,9 +126,6 @@ def graphql_contributions(start: dt.datetime, end: dt.datetime) -> tuple[dict[st
 
 
 def public_activity_fallback(start: dt.datetime) -> tuple[dict[str, int], dict[str, int]]:
-    # GitHub's public Events API is intentionally a short rolling window. This
-    # fallback is labelled PUBLIC ACTIVITY in the generated panel so it is not
-    # confused with GitHub's official contribution calendar.
     events = paged(f"/users/{USER}/events/public", pages=3)
     days: collections.Counter[str] = collections.Counter()
     for event in events:
@@ -140,14 +135,44 @@ def public_activity_fallback(start: dt.datetime) -> tuple[dict[str, int], dict[s
         when = dt.datetime.fromisoformat(created.replace("Z", "+00:00"))
         if when >= start:
             days[when.date().isoformat()] += 1
-    return {"total": sum(days.values()), "commits": 0, "issues": 0, "prs": 0, "reviews": 0, "private": 0}, dict(days)
+    return {
+        "total": sum(days.values()),
+        "commits": 0,
+        "issues": 0,
+        "prs": 0,
+        "reviews": 0,
+        "restricted": 0,
+    }, dict(days)
+
+
+def owned_repositories() -> list[dict]:
+    if PRIVATE_MODE:
+        try:
+            repos = paged(
+                "/user/repos",
+                {"visibility": "all", "affiliation": "owner", "sort": "pushed"},
+            )
+            return [
+                r for r in repos
+                if isinstance(r, dict)
+                and r.get("owner", {}).get("login", "").lower() == USER.lower()
+            ]
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError):
+            pass
+    repos = paged(f"/users/{USER}/repos", {"type": "owner", "sort": "pushed"})
+    return [
+        r for r in repos
+        if isinstance(r, dict)
+        and r.get("owner", {}).get("login", "").lower() == USER.lower()
+    ]
 
 
 def language_mix(repos: list[dict]) -> list[tuple[str, int]]:
     totals: collections.Counter[str] = collections.Counter()
-    # Recent, owned, non-fork public repositories keep this representative and
-    # bound the number of API calls.
-    candidates = [r for r in repos if not r.get("fork") and not r.get("archived") and r.get("name") != USER][:10]
+    candidates = [
+        r for r in repos
+        if not r.get("fork") and not r.get("archived") and r.get("name") != USER
+    ][:16]
     for repo in candidates:
         try:
             langs = api(f"/repos/{USER}/{repo['name']}/languages")
@@ -184,7 +209,13 @@ def level(count: int, peak: int) -> int:
     return 4
 
 
-def render(stats: dict, contribution_days: dict[str, int], contribution_label: str, languages: list[tuple[str, int]], active: list[dict]) -> str:
+def render(
+    stats: dict,
+    contribution_days: dict[str, int],
+    contribution_label: str,
+    languages: list[tuple[str, int]],
+    active_public: list[dict],
+) -> str:
     width, height = 1000, 660
     bg = "#0d1117"
     panel = "#0b1510"
@@ -197,21 +228,21 @@ def render(stats: dict, contribution_days: dict[str, int], contribution_label: s
 
     now = dt.datetime.now(dt.timezone.utc)
     today = now.date()
-    # Align 53 weeks to Sunday so the grid reads like GitHub's calendar.
     first = today - dt.timedelta(days=364)
     first -= dt.timedelta(days=(first.weekday() + 1) % 7)
     dates = [first + dt.timedelta(days=i) for i in range((today - first).days + 1)]
     peak = max((contribution_days.get(d.isoformat(), 0) for d in dates), default=0)
 
+    visibility = "private activity aggregated · private repo names never rendered" if stats["private_mode"] else "public-only mode · add PROFILE_STATS_TOKEN for private aggregates"
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
         '<title id="title">GitHub signal for ' + esc(USER) + '</title>',
-        '<desc id="desc">A generated panel of GitHub contribution, pull request, repository and language statistics.</desc>',
+        '<desc id="desc">Generated GitHub contribution and repository activity statistics.</desc>',
         f'<rect width="100%" height="100%" rx="18" fill="{bg}"/>',
         f'<rect x="1" y="1" width="998" height="658" rx="18" fill="none" stroke="{border}" stroke-width="2"/>',
         '<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.label{font-size:12px;letter-spacing:1.2px}.num{font-size:30px;font-weight:700}.small{font-size:13px}.repo{font-size:14px}</style>',
         f'<text x="38" y="50" fill="{green}" font-size="20" font-weight="700">&gt; github.signal --user {esc(USER)}</text>',
-        f'<text x="38" y="76" fill="{muted}" class="small">generated from GitHub API · {now.strftime("%Y-%m-%d %H:%M UTC")} · public repository details only</text>',
+        f'<text x="38" y="76" fill="{muted}" class="small">generated {now.strftime("%Y-%m-%d %H:%M UTC")} · {esc(visibility)}</text>',
     ]
 
     cards = [
@@ -219,12 +250,9 @@ def render(stats: dict, contribution_days: dict[str, int], contribution_label: s
         ("MERGED PRS", compact(stats["merged_prs"])),
         ("EXTERNAL MERGES", compact(stats["external_merges"])),
         ("MERGED / 90D", compact(stats["merged_90d"])),
-        ("PUBLIC REPOS", compact(stats["public_repos"])),
+        ("PRIVATE REPOS" if stats["private_mode"] else "PUBLIC REPOS", compact(stats["private_repos"] if stats["private_mode"] else stats["public_repos"])),
     ]
-    card_x = 38
-    card_y = 108
-    card_w = 174
-    gap = 16
+    card_x, card_y, card_w, gap = 38, 108, 174, 16
     for i, (label_text, number) in enumerate(cards):
         x = card_x + i * (card_w + gap)
         parts.append(f'<rect x="{x}" y="{card_y}" width="{card_w}" height="94" rx="10" fill="{panel}" stroke="#1f2933"/>')
@@ -236,8 +264,7 @@ def render(stats: dict, contribution_days: dict[str, int], contribution_label: s
         f'<text x="38" y="266" fill="{muted}" class="small">activity density, not a productivity score</text>',
     ]
 
-    grid_x, grid_y = 38, 286
-    cell, cell_gap = 11, 3
+    grid_x, grid_y, cell, cell_gap = 38, 286, 11, 3
     for d in dates:
         week = (d - first).days // 7
         dow = (d.weekday() + 1) % 7
@@ -247,7 +274,6 @@ def render(stats: dict, contribution_days: dict[str, int], contribution_label: s
         y = grid_y + dow * (cell + cell_gap)
         parts.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" fill="{color}"><title>{d.isoformat()}: {count}</title></rect>')
 
-    # Legend
     lx = 38
     ly = grid_y + 7 * (cell + cell_gap) + 22
     parts.append(f'<text x="{lx}" y="{ly}" fill="{muted}" class="small">less</text>')
@@ -257,10 +283,11 @@ def render(stats: dict, contribution_days: dict[str, int], contribution_label: s
         lx += 15
     parts.append(f'<text x="{lx + 2}" y="{ly}" fill="{muted}" class="small">more</text>')
 
-    # Language mix
     lang_x = 790
-    parts.append(f'<text x="{lang_x}" y="244" fill="{green}" font-size="14" font-weight="700">PUBLIC CODE MIX</text>')
-    parts.append(f'<text x="{lang_x}" y="266" fill="{muted}" class="small">recent owned repos</text>')
+    code_mix_label = "ALL CODE MIX" if stats["private_mode"] else "PUBLIC CODE MIX"
+    code_mix_note = "private names suppressed" if stats["private_mode"] else "recent owned repos"
+    parts.append(f'<text x="{lang_x}" y="244" fill="{green}" font-size="14" font-weight="700">{code_mix_label}</text>')
+    parts.append(f'<text x="{lang_x}" y="266" fill="{muted}" class="small">{code_mix_note}</text>')
     total_lang = sum(v for _, v in languages) or 1
     bar_y = 295
     for name, amount in languages[:6]:
@@ -271,15 +298,14 @@ def render(stats: dict, contribution_days: dict[str, int], contribution_label: s
         parts.append(f'<rect x="{lang_x}" y="{bar_y + 8}" width="{max(2, int(170 * pct))}" height="6" rx="3" fill="{green2}"/>')
         bar_y += 42
 
-    # Footer activity list
     footer_y = 478
     parts += [
         f'<line x1="38" y1="{footer_y - 28}" x2="962" y2="{footer_y - 28}" stroke="#1f2933"/>',
         f'<text x="38" y="{footer_y}" fill="{green}" font-size="14" font-weight="700">RECENTLY ACTIVE PUBLIC REPOS</text>',
-        f'<text x="650" y="{footer_y}" fill="{muted}" class="small">owned · non-fork · sorted by push</text>',
+        f'<text x="650" y="{footer_y}" fill="{muted}" class="small">private repos intentionally anonymous</text>',
     ]
     row_y = footer_y + 32
-    for idx, repo in enumerate(active[:4]):
+    for idx, repo in enumerate(active_public[:4]):
         pushed = str(repo.get("pushed_at", ""))[:10]
         name = repo.get("name", "")
         stars = int(repo.get("stargazers_count", 0))
@@ -289,8 +315,12 @@ def render(stats: dict, contribution_days: dict[str, int], contribution_label: s
         parts.append(f'<text x="760" y="{row_y}" fill="{muted}" class="small">★ {stars}   forks {fork_count}</text>')
         row_y += 31
 
+    footer = (
+        f'public repos: {stats["public_repos"]} · private repos in aggregates: {stats["private_repos"]} · '
+        f'stars on owned public repos: {stats["stars"]}'
+    )
     parts += [
-        f'<text x="38" y="628" fill="{muted}" class="small">stars across owned public repos: {stats["stars"]} · external merge = merged PR authored by {esc(USER)} outside repos owned by {esc(USER)}</text>',
+        f'<text x="38" y="628" fill="{muted}" class="small">{footer}</text>',
         f'<circle cx="952" cy="623" r="5" fill="{green}"><animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/></circle>',
         '</svg>',
     ]
@@ -303,13 +333,20 @@ def main() -> int:
     ninety_ago = (now - dt.timedelta(days=90)).date().isoformat()
 
     profile = api(f"/users/{USER}")
-    repos = paged(f"/users/{USER}/repos", {"type": "owner", "sort": "pushed"})
     if not isinstance(profile, dict):
         raise RuntimeError("GitHub profile response was not an object")
 
-    owned = [r for r in repos if isinstance(r, dict) and r.get("owner", {}).get("login", "").lower() == USER.lower()]
+    owned = owned_repositories()
     public_owned = [r for r in owned if not r.get("private")]
-    public_original = [r for r in public_owned if not r.get("fork") and r.get("name") != USER]
+    private_owned = [r for r in owned if r.get("private")]
+    public_original = [
+        r for r in public_owned
+        if not r.get("fork") and not r.get("archived") and r.get("name") != USER
+    ]
+    aggregate_original = [
+        r for r in owned
+        if not r.get("fork") and not r.get("archived") and r.get("name") != USER
+    ]
 
     merged_prs = search_total(f"is:pr is:merged author:{USER}")
     try:
@@ -332,13 +369,18 @@ def main() -> int:
         "external_merges": external_merges,
         "merged_90d": merged_90d,
         "public_repos": len(public_original),
+        "private_repos": len(private_owned) if PRIVATE_MODE else 0,
         "stars": sum(int(r.get("stargazers_count", 0)) for r in public_original),
+        "private_mode": PRIVATE_MODE and bool(private_owned),
     }
-    languages = language_mix(public_original)
-    active = sorted(public_original, key=lambda r: r.get("pushed_at") or "", reverse=True)
+    languages = language_mix(aggregate_original if stats["private_mode"] else public_original)
+    active_public = sorted(public_original, key=lambda r: r.get("pushed_at") or "", reverse=True)
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(render(stats, days, contribution_label, languages, active), encoding="utf-8")
+    OUTPUT.write_text(
+        render(stats, days, contribution_label, languages, active_public),
+        encoding="utf-8",
+    )
     print(f"wrote {OUTPUT}")
     print(json.dumps(stats, sort_keys=True))
     return 0

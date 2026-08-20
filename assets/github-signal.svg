@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660" role="img" aria-labelledby="title desc">
 <title id="title">GitHub signal for csheldrick</title>
-<desc id="desc">A generated panel of GitHub contribution, pull request, repository and language statistics.</desc>
+<desc id="desc">Generated GitHub contribution and repository activity statistics.</desc>
 <rect width="100%" height="100%" rx="18" fill="#0d1117"/>
 <rect x="1" y="1" width="998" height="658" rx="18" fill="none" stroke="#1f6f3f" stroke-width="2"/>
 <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.label{font-size:12px;letter-spacing:1.2px}.num{font-size:30px;font-weight:700}.small{font-size:13px}.repo{font-size:14px}</style>
 <text x="38" y="50" fill="#39d353" font-size="20" font-weight="700">&gt; github.signal --user csheldrick</text>
-<text x="38" y="76" fill="#7d8590" class="small">generated from GitHub API · 2026-08-20 02:41 UTC · public repository details only</text>
+<text x="38" y="76" fill="#7d8590" class="small">generated 2026-08-20 02:43 UTC · public-only mode · add PROFILE_STATS_TOKEN for private aggregates</text>
 <rect x="38" y="108" width="174" height="94" rx="10" fill="#0b1510" stroke="#1f2933"/>
 <text x="54" y="136" fill="#7d8590" class="label">365D CONTRIBUTIONS</text>
 <text x="54" y="175" fill="#c9d1d9" class="num">231</text>
@@ -427,7 +427,7 @@
 <rect x="790" y="513" width="3" height="6" rx="3" fill="#26a641"/>
 <line x1="38" y1="450" x2="962" y2="450" stroke="#1f2933"/>
 <text x="38" y="478" fill="#39d353" font-size="14" font-weight="700">RECENTLY ACTIVE PUBLIC REPOS</text>
-<text x="650" y="478" fill="#7d8590" class="small">owned · non-fork · sorted by push</text>
+<text x="650" y="478" fill="#7d8590" class="small">private repos intentionally anonymous</text>
 <text x="38" y="510" fill="#c9d1d9" class="repo">01  Galimulator-ng</text>
 <text x="540" y="510" fill="#7d8590" class="small">pushed 2026-07-25</text>
 <text x="760" y="510" fill="#7d8590" class="small">★ 1   forks 0</text>
@@ -440,6 +440,6 @@
 <text x="38" y="603" fill="#c9d1d9" class="repo">04  test-plugin</text>
 <text x="540" y="603" fill="#7d8590" class="small">pushed 2022-05-05</text>
 <text x="760" y="603" fill="#7d8590" class="small">★ 0   forks 0</text>
-<text x="38" y="628" fill="#7d8590" class="small">stars across owned public repos: 9 · external merge = merged PR authored by csheldrick outside repos owned by csheldrick</text>
+<text x="38" y="628" fill="#7d8590" class="small">public repos: 10 · private repos in aggregates: 0 · stars on owned public repos: 9</text>
 <circle cx="952" cy="623" r="5" fill="#39d353"><animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/></circle>
 </svg>
