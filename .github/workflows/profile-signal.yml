@@ -11,6 +11,12 @@ on:
     paths:
       - scripts/profile_signal.py
       - .github/workflows/profile-signal.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - scripts/profile_signal.py
+      - .github/workflows/profile-signal.yml
 
 permissions:
   contents: write
@@ -35,6 +41,7 @@ jobs:
         run: python scripts/profile_signal.py
 
       - name: Commit refreshed signal
+        if: github.event_name != 'pull_request'
         shell: bash
         run: |
           if git diff --quiet -- assets/github-signal.svg; then
@@ -46,3 +53,9 @@ jobs:
           git add assets/github-signal.svg
           git commit -m "chore: refresh profile signal [skip ci]"
           git push
+
+      - name: Verify render changed on PR
+        if: github.event_name == 'pull_request'
+        run: |
+          test -s assets/github-signal.svg
+          grep -q "MERGE SIGNAL" assets/github-signal.svg
