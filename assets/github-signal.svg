@@ -5,7 +5,7 @@
 <rect x="1" y="1" width="998" height="658" rx="18" fill="none" stroke="#1f6f3f" stroke-width="2"/>
 <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.label{font-size:12px;letter-spacing:1.2px}.num{font-size:30px;font-weight:700}.small{font-size:13px}.repo{font-size:14px}</style>
 <text x="38" y="50" fill="#39d353" font-size="20" font-weight="700">&gt; github.signal --user csheldrick</text>
-<text x="38" y="76" fill="#7d8590" class="small">generated 2026-08-20 02:43 UTC · public-only mode · add PROFILE_STATS_TOKEN for private aggregates</text>
+<text x="38" y="76" fill="#7d8590" class="small">generated 2026-08-20 02:44 UTC · public-only mode · add PROFILE_STATS_TOKEN for private aggregates</text>
 <rect x="38" y="108" width="174" height="94" rx="10" fill="#0b1510" stroke="#1f2933"/>
 <text x="54" y="136" fill="#7d8590" class="label">365D CONTRIBUTIONS</text>
 <text x="54" y="175" fill="#c9d1d9" class="num">231</text>
