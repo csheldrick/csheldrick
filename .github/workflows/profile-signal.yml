@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - main
-      - profile/custom-github-signal
+      - profile/include-private-signal
     paths:
       - scripts/generate_profile_stats.py
       - .github/workflows/profile-signal.yml
@@ -30,9 +30,10 @@ jobs:
       - name: Generate GitHub signal
         env:
           PROFILE_USER: csheldrick
-          # Deliberately use only this repository's token. The panel is meant
-          # to describe public GitHub activity, never private repository data.
-          GH_TOKEN: ${{ github.token }}
+          # If PROFILE_STATS_TOKEN exists, aggregate private repo activity too.
+          # Private repo names/URLs are never rendered into the public SVG.
+          GH_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
+          PROFILE_PRIVATE: ${{ secrets.PROFILE_STATS_TOKEN != '' && '1' || '0' }}
         run: python scripts/generate_profile_stats.py
 
       - name: Commit refreshed signal
