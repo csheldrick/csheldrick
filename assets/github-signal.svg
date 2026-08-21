@@ -5,16 +5,16 @@
 <rect x="1" y="1" width="998" height="658" rx="18" fill="none" stroke="#1f6f3f" stroke-width="2"/>
 <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.label{font-size:12px;letter-spacing:1.1px}.num{font-size:30px;font-weight:700}.small{font-size:13px}.repo{font-size:14px}</style>
 <text x="38" y="50" fill="#39d353" font-size="20" font-weight="700">&gt; github.signal --user csheldrick</text>
-<text x="38" y="76" fill="#7d8590" class="small">generated 2026-08-20 06:30 UTC · private + public activity · repository names shown</text>
+<text x="38" y="76" fill="#7d8590" class="small">generated 2026-08-21 06:30 UTC · private + public activity · repository names shown</text>
 <rect x="38" y="108" width="174" height="94" rx="10" fill="#0b1510" stroke="#1f2933"/>
 <text x="54" y="136" fill="#7d8590" class="label">MERGED / 90D</text>
-<text x="54" y="175" fill="#c9d1d9" class="num">715</text>
+<text x="54" y="175" fill="#c9d1d9" class="num">706</text>
 <rect x="228" y="108" width="174" height="94" rx="10" fill="#0b1510" stroke="#1f2933"/>
 <text x="244" y="136" fill="#7d8590" class="label">MERGED PRS</text>
 <text x="244" y="175" fill="#c9d1d9" class="num">946</text>
 <rect x="418" y="108" width="174" height="94" rx="10" fill="#0b1510" stroke="#1f2933"/>
 <text x="434" y="136" fill="#7d8590" class="label">ACTIVE DAYS / 90D</text>
-<text x="434" y="175" fill="#c9d1d9" class="num">77</text>
+<text x="434" y="175" fill="#c9d1d9" class="num">76</text>
 <rect x="608" y="108" width="174" height="94" rx="10" fill="#0b1510" stroke="#1f2933"/>
 <text x="624" y="136" fill="#7d8590" class="label">EXTERNAL MERGES</text>
 <text x="624" y="175" fill="#c9d1d9" class="num">2</text>
@@ -23,102 +23,96 @@
 <text x="814" y="175" fill="#c9d1d9" class="num">158</text>
 <text x="38" y="244" fill="#39d353" font-size="14" font-weight="700">MERGE SIGNAL · LAST 90 DAYS</text>
 <text x="38" y="266" fill="#7d8590" class="small">each cell = merged PRs authored by csheldrick on that day · private included when token allows</text>
-<rect x="38" y="286" width="20" height="20" rx="3" fill="#161b22"><title>2026-05-17: 0 merged PRs</title></rect>
-<rect x="38" y="311" width="20" height="20" rx="3" fill="#161b22"><title>2026-05-18: 0 merged PRs</title></rect>
-<rect x="38" y="336" width="20" height="20" rx="3" fill="#161b22"><title>2026-05-19: 0 merged PRs</title></rect>
-<rect x="38" y="361" width="20" height="20" rx="3" fill="#161b22"><title>2026-05-20: 0 merged PRs</title></rect>
-<rect x="38" y="386" width="20" height="20" rx="3" fill="#161b22"><title>2026-05-21: 0 merged PRs</title></rect>
-<rect x="38" y="411" width="20" height="20" rx="3" fill="#161b22"><title>2026-05-22: 0 merged PRs</title></rect>
-<rect x="38" y="436" width="20" height="20" rx="3" fill="#006d32"><title>2026-05-23: 9 merged PRs</title></rect>
-<rect x="63" y="286" width="20" height="20" rx="3" fill="#0e4429"><title>2026-05-24: 5 merged PRs</title></rect>
-<rect x="63" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-05-25: 5 merged PRs</title></rect>
-<rect x="63" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-05-26: 9 merged PRs</title></rect>
-<rect x="63" y="361" width="20" height="20" rx="3" fill="#006d32"><title>2026-05-27: 12 merged PRs</title></rect>
-<rect x="63" y="386" width="20" height="20" rx="3" fill="#0e4429"><title>2026-05-28: 5 merged PRs</title></rect>
-<rect x="63" y="411" width="20" height="20" rx="3" fill="#006d32"><title>2026-05-29: 12 merged PRs</title></rect>
-<rect x="63" y="436" width="20" height="20" rx="3" fill="#006d32"><title>2026-05-30: 11 merged PRs</title></rect>
-<rect x="88" y="286" width="20" height="20" rx="3" fill="#006d32"><title>2026-05-31: 7 merged PRs</title></rect>
-<rect x="88" y="311" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-01: 9 merged PRs</title></rect>
-<rect x="88" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-02: 8 merged PRs</title></rect>
-<rect x="88" y="361" width="20" height="20" rx="3" fill="#0e4429"><title>2026-06-03: 4 merged PRs</title></rect>
-<rect x="88" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-04: 8 merged PRs</title></rect>
-<rect x="88" y="411" width="20" height="20" rx="3" fill="#161b22"><title>2026-06-05: 0 merged PRs</title></rect>
-<rect x="88" y="436" width="20" height="20" rx="3" fill="#161b22"><title>2026-06-06: 0 merged PRs</title></rect>
-<rect x="113" y="286" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-07: 8 merged PRs</title></rect>
-<rect x="113" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-06-08: 4 merged PRs</title></rect>
-<rect x="113" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-09: 9 merged PRs</title></rect>
-<rect x="113" y="361" width="20" height="20" rx="3" fill="#26a641"><title>2026-06-10: 15 merged PRs</title></rect>
-<rect x="113" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-11: 9 merged PRs</title></rect>
-<rect x="113" y="411" width="20" height="20" rx="3" fill="#0e4429"><title>2026-06-12: 5 merged PRs</title></rect>
-<rect x="113" y="436" width="20" height="20" rx="3" fill="#26a641"><title>2026-06-13: 16 merged PRs</title></rect>
-<rect x="138" y="286" width="20" height="20" rx="3" fill="#39d353"><title>2026-06-14: 26 merged PRs</title></rect>
-<rect x="138" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-06-15: 6 merged PRs</title></rect>
-<rect x="138" y="336" width="20" height="20" rx="3" fill="#26a641"><title>2026-06-16: 21 merged PRs</title></rect>
-<rect x="138" y="361" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-17: 8 merged PRs</title></rect>
-<rect x="138" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-18: 9 merged PRs</title></rect>
-<rect x="138" y="411" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-19: 9 merged PRs</title></rect>
-<rect x="138" y="436" width="20" height="20" rx="3" fill="#39d353"><title>2026-06-20: 24 merged PRs</title></rect>
-<rect x="163" y="286" width="20" height="20" rx="3" fill="#39d353"><title>2026-06-21: 24 merged PRs</title></rect>
-<rect x="163" y="311" width="20" height="20" rx="3" fill="#39d353"><title>2026-06-22: 25 merged PRs</title></rect>
-<rect x="163" y="336" width="20" height="20" rx="3" fill="#39d353"><title>2026-06-23: 23 merged PRs</title></rect>
-<rect x="163" y="361" width="20" height="20" rx="3" fill="#26a641"><title>2026-06-24: 20 merged PRs</title></rect>
-<rect x="163" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-25: 7 merged PRs</title></rect>
-<rect x="163" y="411" width="20" height="20" rx="3" fill="#0e4429"><title>2026-06-26: 2 merged PRs</title></rect>
-<rect x="163" y="436" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-27: 7 merged PRs</title></rect>
-<rect x="188" y="286" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-28: 9 merged PRs</title></rect>
-<rect x="188" y="311" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-29: 8 merged PRs</title></rect>
-<rect x="188" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-30: 11 merged PRs</title></rect>
-<rect x="188" y="361" width="20" height="20" rx="3" fill="#26a641"><title>2026-07-01: 20 merged PRs</title></rect>
-<rect x="188" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-02: 8 merged PRs</title></rect>
-<rect x="188" y="411" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-03: 13 merged PRs</title></rect>
-<rect x="188" y="436" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-04: 11 merged PRs</title></rect>
-<rect x="213" y="286" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-05: 5 merged PRs</title></rect>
-<rect x="213" y="311" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-06: 7 merged PRs</title></rect>
-<rect x="213" y="336" width="20" height="20" rx="3" fill="#161b22"><title>2026-07-07: 0 merged PRs</title></rect>
-<rect x="213" y="361" width="20" height="20" rx="3" fill="#161b22"><title>2026-07-08: 0 merged PRs</title></rect>
-<rect x="213" y="386" width="20" height="20" rx="3" fill="#161b22"><title>2026-07-09: 0 merged PRs</title></rect>
-<rect x="213" y="411" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-10: 6 merged PRs</title></rect>
-<rect x="213" y="436" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-11: 11 merged PRs</title></rect>
-<rect x="238" y="286" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-12: 13 merged PRs</title></rect>
-<rect x="238" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-13: 3 merged PRs</title></rect>
-<rect x="238" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-14: 13 merged PRs</title></rect>
-<rect x="238" y="361" width="20" height="20" rx="3" fill="#39d353"><title>2026-07-15: 32 merged PRs</title></rect>
-<rect x="238" y="386" width="20" height="20" rx="3" fill="#39d353"><title>2026-07-16: 24 merged PRs</title></rect>
-<rect x="238" y="411" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-17: 10 merged PRs</title></rect>
-<rect x="238" y="436" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-18: 7 merged PRs</title></rect>
-<rect x="263" y="286" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-19: 2 merged PRs</title></rect>
-<rect x="263" y="311" width="20" height="20" rx="3" fill="#161b22"><title>2026-07-20: 0 merged PRs</title></rect>
-<rect x="263" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-21: 9 merged PRs</title></rect>
-<rect x="263" y="361" width="20" height="20" rx="3" fill="#26a641"><title>2026-07-22: 17 merged PRs</title></rect>
-<rect x="263" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-23: 8 merged PRs</title></rect>
-<rect x="263" y="411" width="20" height="20" rx="3" fill="#161b22"><title>2026-07-24: 0 merged PRs</title></rect>
-<rect x="263" y="436" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-25: 5 merged PRs</title></rect>
-<rect x="288" y="286" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-26: 5 merged PRs</title></rect>
-<rect x="288" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-27: 3 merged PRs</title></rect>
-<rect x="288" y="336" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-28: 5 merged PRs</title></rect>
-<rect x="288" y="361" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-29: 7 merged PRs</title></rect>
-<rect x="288" y="386" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-30: 5 merged PRs</title></rect>
-<rect x="288" y="411" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-31: 9 merged PRs</title></rect>
-<rect x="288" y="436" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-01: 2 merged PRs</title></rect>
-<rect x="313" y="286" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-02: 6 merged PRs</title></rect>
-<rect x="313" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-03: 4 merged PRs</title></rect>
-<rect x="313" y="336" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-04: 5 merged PRs</title></rect>
-<rect x="313" y="361" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-05: 2 merged PRs</title></rect>
-<rect x="313" y="386" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-06: 2 merged PRs</title></rect>
-<rect x="313" y="411" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-07: 3 merged PRs</title></rect>
-<rect x="313" y="436" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-08: 4 merged PRs</title></rect>
-<rect x="338" y="286" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-09: 0 merged PRs</title></rect>
-<rect x="338" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-10: 4 merged PRs</title></rect>
-<rect x="338" y="336" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-11: 1 merged PRs</title></rect>
-<rect x="338" y="361" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-12: 2 merged PRs</title></rect>
-<rect x="338" y="386" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-13: 6 merged PRs</title></rect>
-<rect x="338" y="411" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-14: 6 merged PRs</title></rect>
-<rect x="338" y="436" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-15: 1 merged PRs</title></rect>
-<rect x="363" y="286" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-16: 0 merged PRs</title></rect>
-<rect x="363" y="311" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-17: 0 merged PRs</title></rect>
-<rect x="363" y="336" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-18: 0 merged PRs</title></rect>
-<rect x="363" y="361" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-19: 0 merged PRs</title></rect>
-<rect x="363" y="386" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-20: 0 merged PRs</title></rect>
+<rect x="38" y="286" width="20" height="20" rx="3" fill="#0e4429"><title>2026-05-24: 5 merged PRs</title></rect>
+<rect x="38" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-05-25: 5 merged PRs</title></rect>
+<rect x="38" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-05-26: 9 merged PRs</title></rect>
+<rect x="38" y="361" width="20" height="20" rx="3" fill="#006d32"><title>2026-05-27: 12 merged PRs</title></rect>
+<rect x="38" y="386" width="20" height="20" rx="3" fill="#0e4429"><title>2026-05-28: 5 merged PRs</title></rect>
+<rect x="38" y="411" width="20" height="20" rx="3" fill="#006d32"><title>2026-05-29: 12 merged PRs</title></rect>
+<rect x="38" y="436" width="20" height="20" rx="3" fill="#006d32"><title>2026-05-30: 11 merged PRs</title></rect>
+<rect x="63" y="286" width="20" height="20" rx="3" fill="#006d32"><title>2026-05-31: 7 merged PRs</title></rect>
+<rect x="63" y="311" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-01: 9 merged PRs</title></rect>
+<rect x="63" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-02: 8 merged PRs</title></rect>
+<rect x="63" y="361" width="20" height="20" rx="3" fill="#0e4429"><title>2026-06-03: 4 merged PRs</title></rect>
+<rect x="63" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-04: 8 merged PRs</title></rect>
+<rect x="63" y="411" width="20" height="20" rx="3" fill="#161b22"><title>2026-06-05: 0 merged PRs</title></rect>
+<rect x="63" y="436" width="20" height="20" rx="3" fill="#161b22"><title>2026-06-06: 0 merged PRs</title></rect>
+<rect x="88" y="286" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-07: 8 merged PRs</title></rect>
+<rect x="88" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-06-08: 4 merged PRs</title></rect>
+<rect x="88" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-09: 9 merged PRs</title></rect>
+<rect x="88" y="361" width="20" height="20" rx="3" fill="#26a641"><title>2026-06-10: 15 merged PRs</title></rect>
+<rect x="88" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-11: 9 merged PRs</title></rect>
+<rect x="88" y="411" width="20" height="20" rx="3" fill="#0e4429"><title>2026-06-12: 5 merged PRs</title></rect>
+<rect x="88" y="436" width="20" height="20" rx="3" fill="#26a641"><title>2026-06-13: 16 merged PRs</title></rect>
+<rect x="113" y="286" width="20" height="20" rx="3" fill="#39d353"><title>2026-06-14: 26 merged PRs</title></rect>
+<rect x="113" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-06-15: 6 merged PRs</title></rect>
+<rect x="113" y="336" width="20" height="20" rx="3" fill="#26a641"><title>2026-06-16: 21 merged PRs</title></rect>
+<rect x="113" y="361" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-17: 8 merged PRs</title></rect>
+<rect x="113" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-18: 9 merged PRs</title></rect>
+<rect x="113" y="411" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-19: 9 merged PRs</title></rect>
+<rect x="113" y="436" width="20" height="20" rx="3" fill="#39d353"><title>2026-06-20: 24 merged PRs</title></rect>
+<rect x="138" y="286" width="20" height="20" rx="3" fill="#39d353"><title>2026-06-21: 24 merged PRs</title></rect>
+<rect x="138" y="311" width="20" height="20" rx="3" fill="#39d353"><title>2026-06-22: 25 merged PRs</title></rect>
+<rect x="138" y="336" width="20" height="20" rx="3" fill="#39d353"><title>2026-06-23: 23 merged PRs</title></rect>
+<rect x="138" y="361" width="20" height="20" rx="3" fill="#26a641"><title>2026-06-24: 20 merged PRs</title></rect>
+<rect x="138" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-25: 7 merged PRs</title></rect>
+<rect x="138" y="411" width="20" height="20" rx="3" fill="#0e4429"><title>2026-06-26: 2 merged PRs</title></rect>
+<rect x="138" y="436" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-27: 7 merged PRs</title></rect>
+<rect x="163" y="286" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-28: 9 merged PRs</title></rect>
+<rect x="163" y="311" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-29: 8 merged PRs</title></rect>
+<rect x="163" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-30: 11 merged PRs</title></rect>
+<rect x="163" y="361" width="20" height="20" rx="3" fill="#26a641"><title>2026-07-01: 20 merged PRs</title></rect>
+<rect x="163" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-02: 8 merged PRs</title></rect>
+<rect x="163" y="411" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-03: 13 merged PRs</title></rect>
+<rect x="163" y="436" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-04: 11 merged PRs</title></rect>
+<rect x="188" y="286" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-05: 5 merged PRs</title></rect>
+<rect x="188" y="311" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-06: 7 merged PRs</title></rect>
+<rect x="188" y="336" width="20" height="20" rx="3" fill="#161b22"><title>2026-07-07: 0 merged PRs</title></rect>
+<rect x="188" y="361" width="20" height="20" rx="3" fill="#161b22"><title>2026-07-08: 0 merged PRs</title></rect>
+<rect x="188" y="386" width="20" height="20" rx="3" fill="#161b22"><title>2026-07-09: 0 merged PRs</title></rect>
+<rect x="188" y="411" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-10: 6 merged PRs</title></rect>
+<rect x="188" y="436" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-11: 11 merged PRs</title></rect>
+<rect x="213" y="286" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-12: 13 merged PRs</title></rect>
+<rect x="213" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-13: 3 merged PRs</title></rect>
+<rect x="213" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-14: 13 merged PRs</title></rect>
+<rect x="213" y="361" width="20" height="20" rx="3" fill="#39d353"><title>2026-07-15: 32 merged PRs</title></rect>
+<rect x="213" y="386" width="20" height="20" rx="3" fill="#39d353"><title>2026-07-16: 24 merged PRs</title></rect>
+<rect x="213" y="411" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-17: 10 merged PRs</title></rect>
+<rect x="213" y="436" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-18: 7 merged PRs</title></rect>
+<rect x="238" y="286" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-19: 2 merged PRs</title></rect>
+<rect x="238" y="311" width="20" height="20" rx="3" fill="#161b22"><title>2026-07-20: 0 merged PRs</title></rect>
+<rect x="238" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-21: 9 merged PRs</title></rect>
+<rect x="238" y="361" width="20" height="20" rx="3" fill="#26a641"><title>2026-07-22: 17 merged PRs</title></rect>
+<rect x="238" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-23: 8 merged PRs</title></rect>
+<rect x="238" y="411" width="20" height="20" rx="3" fill="#161b22"><title>2026-07-24: 0 merged PRs</title></rect>
+<rect x="238" y="436" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-25: 5 merged PRs</title></rect>
+<rect x="263" y="286" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-26: 5 merged PRs</title></rect>
+<rect x="263" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-27: 3 merged PRs</title></rect>
+<rect x="263" y="336" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-28: 5 merged PRs</title></rect>
+<rect x="263" y="361" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-29: 7 merged PRs</title></rect>
+<rect x="263" y="386" width="20" height="20" rx="3" fill="#0e4429"><title>2026-07-30: 5 merged PRs</title></rect>
+<rect x="263" y="411" width="20" height="20" rx="3" fill="#006d32"><title>2026-07-31: 9 merged PRs</title></rect>
+<rect x="263" y="436" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-01: 2 merged PRs</title></rect>
+<rect x="288" y="286" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-02: 6 merged PRs</title></rect>
+<rect x="288" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-03: 4 merged PRs</title></rect>
+<rect x="288" y="336" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-04: 5 merged PRs</title></rect>
+<rect x="288" y="361" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-05: 2 merged PRs</title></rect>
+<rect x="288" y="386" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-06: 2 merged PRs</title></rect>
+<rect x="288" y="411" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-07: 3 merged PRs</title></rect>
+<rect x="288" y="436" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-08: 4 merged PRs</title></rect>
+<rect x="313" y="286" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-09: 0 merged PRs</title></rect>
+<rect x="313" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-10: 4 merged PRs</title></rect>
+<rect x="313" y="336" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-11: 1 merged PRs</title></rect>
+<rect x="313" y="361" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-12: 2 merged PRs</title></rect>
+<rect x="313" y="386" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-13: 6 merged PRs</title></rect>
+<rect x="313" y="411" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-14: 6 merged PRs</title></rect>
+<rect x="313" y="436" width="20" height="20" rx="3" fill="#0e4429"><title>2026-08-15: 1 merged PRs</title></rect>
+<rect x="338" y="286" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-16: 0 merged PRs</title></rect>
+<rect x="338" y="311" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-17: 0 merged PRs</title></rect>
+<rect x="338" y="336" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-18: 0 merged PRs</title></rect>
+<rect x="338" y="361" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-19: 0 merged PRs</title></rect>
+<rect x="338" y="386" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-20: 0 merged PRs</title></rect>
+<rect x="338" y="411" width="20" height="20" rx="3" fill="#161b22"><title>2026-08-21: 0 merged PRs</title></rect>
 <text x="38" y="479" fill="#7d8590" class="small">0</text>
 <rect x="58" y="466" width="13" height="13" rx="2" fill="#161b22"/>
 <rect x="75" y="466" width="13" height="13" rx="2" fill="#0e4429"/>
@@ -128,45 +122,45 @@
 <text x="145" y="479" fill="#7d8590" class="small">peak 32/day</text>
 <text x="485" y="244" fill="#39d353" font-size="14" font-weight="700">ALL CODE MIX</text>
 <text x="485" y="266" fill="#7d8590" class="small">recent owned repositories</text>
-<text x="485" y="295" fill="#c9d1d9" class="small">JavaScript</text>
-<text x="960" y="295" text-anchor="end" fill="#7d8590" class="small">75.3%</text>
+<text x="485" y="295" fill="#c9d1d9" class="small">TypeScript</text>
+<text x="960" y="295" text-anchor="end" fill="#7d8590" class="small">43.7%</text>
 <rect x="485" y="303" width="475" height="6" rx="3" fill="#161b22"/>
-<rect x="485" y="303" width="357" height="6" rx="3" fill="#26a641"/>
+<rect x="485" y="303" width="207" height="6" rx="3" fill="#26a641"/>
 <text x="485" y="337" fill="#c9d1d9" class="small">Java</text>
-<text x="960" y="337" text-anchor="end" fill="#7d8590" class="small">12.7%</text>
+<text x="960" y="337" text-anchor="end" fill="#7d8590" class="small">43.2%</text>
 <rect x="485" y="345" width="475" height="6" rx="3" fill="#161b22"/>
-<rect x="485" y="345" width="60" height="6" rx="3" fill="#26a641"/>
-<text x="485" y="379" fill="#c9d1d9" class="small">TypeScript</text>
-<text x="960" y="379" text-anchor="end" fill="#7d8590" class="small">10.2%</text>
+<rect x="485" y="345" width="204" height="6" rx="3" fill="#26a641"/>
+<text x="485" y="379" fill="#c9d1d9" class="small">JavaScript</text>
+<text x="960" y="379" text-anchor="end" fill="#7d8590" class="small"> 7.1%</text>
 <rect x="485" y="387" width="475" height="6" rx="3" fill="#161b22"/>
-<rect x="485" y="387" width="48" height="6" rx="3" fill="#26a641"/>
+<rect x="485" y="387" width="33" height="6" rx="3" fill="#26a641"/>
 <text x="485" y="421" fill="#c9d1d9" class="small">Python</text>
-<text x="960" y="421" text-anchor="end" fill="#7d8590" class="small"> 0.8%</text>
+<text x="960" y="421" text-anchor="end" fill="#7d8590" class="small"> 2.6%</text>
 <rect x="485" y="429" width="475" height="6" rx="3" fill="#161b22"/>
-<rect x="485" y="429" width="3" height="6" rx="3" fill="#26a641"/>
+<rect x="485" y="429" width="12" height="6" rx="3" fill="#26a641"/>
 <text x="485" y="463" fill="#c9d1d9" class="small">C#</text>
-<text x="960" y="463" text-anchor="end" fill="#7d8590" class="small"> 0.8%</text>
+<text x="960" y="463" text-anchor="end" fill="#7d8590" class="small"> 2.6%</text>
 <rect x="485" y="471" width="475" height="6" rx="3" fill="#161b22"/>
-<rect x="485" y="471" width="3" height="6" rx="3" fill="#26a641"/>
+<rect x="485" y="471" width="12" height="6" rx="3" fill="#26a641"/>
 <text x="485" y="505" fill="#c9d1d9" class="small">Shell</text>
-<text x="960" y="505" text-anchor="end" fill="#7d8590" class="small"> 0.2%</text>
+<text x="960" y="505" text-anchor="end" fill="#7d8590" class="small"> 0.8%</text>
 <rect x="485" y="513" width="475" height="6" rx="3" fill="#161b22"/>
-<rect x="485" y="513" width="2" height="6" rx="3" fill="#26a641"/>
+<rect x="485" y="513" width="4" height="6" rx="3" fill="#26a641"/>
 <line x1="38" y1="450" x2="962" y2="450" stroke="#1f2933"/>
 <text x="38" y="478" fill="#39d353" font-size="14" font-weight="700">RECENTLY ACTIVE REPOS</text>
 <text x="650" y="478" fill="#7d8590" class="small">owned · non-fork · sorted by push</text>
 <text x="38" y="510" fill="#c9d1d9" class="repo">01  Cairn</text>
-<text x="520" y="510" fill="#7d8590" class="small">private · pushed 2026-08-20</text>
+<text x="520" y="510" fill="#7d8590" class="small">private · pushed 2026-08-21</text>
 <text x="860" y="510" fill="#7d8590" class="small">★ 1</text>
-<text x="38" y="541" fill="#c9d1d9" class="repo">02  zeus</text>
-<text x="520" y="541" fill="#7d8590" class="small">private · pushed 2026-08-18</text>
-<text x="860" y="541" fill="#7d8590" class="small">★ 0</text>
+<text x="38" y="541" fill="#c9d1d9" class="repo">02  utilis</text>
+<text x="520" y="541" fill="#7d8590" class="small">private · pushed 2026-08-21</text>
+<text x="860" y="541" fill="#7d8590" class="small">★ 1</text>
 <text x="38" y="572" fill="#c9d1d9" class="repo">03  Strata</text>
-<text x="520" y="572" fill="#7d8590" class="small">private · pushed 2026-08-18</text>
+<text x="520" y="572" fill="#7d8590" class="small">private · pushed 2026-08-20</text>
 <text x="860" y="572" fill="#7d8590" class="small">★ 1</text>
-<text x="38" y="603" fill="#c9d1d9" class="repo">04  noet</text>
-<text x="520" y="603" fill="#7d8590" class="small">private · pushed 2026-08-15</text>
-<text x="860" y="603" fill="#7d8590" class="small">★ 1</text>
-<text x="38" y="628" fill="#7d8590" class="small">public repos: 10 · private repos: 158 · 90d merge trace: 715/715 PRs loaded</text>
+<text x="38" y="603" fill="#c9d1d9" class="repo">04  zeus</text>
+<text x="520" y="603" fill="#7d8590" class="small">private · pushed 2026-08-18</text>
+<text x="860" y="603" fill="#7d8590" class="small">★ 0</text>
+<text x="38" y="628" fill="#7d8590" class="small">public repos: 10 · private repos: 158 · 90d merge trace: 706/706 PRs loaded</text>
 <circle cx="952" cy="623" r="5" fill="#39d353"><animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/></circle>
 </svg>
