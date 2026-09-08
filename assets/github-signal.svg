@@ -5,10 +5,10 @@
 <rect x="1" y="1" width="998" height="658" rx="18" fill="none" stroke="#1f6f3f" stroke-width="2"/>
 <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.label{font-size:12px;letter-spacing:1.1px}.num{font-size:30px;font-weight:700}.small{font-size:13px}.repo{font-size:14px}</style>
 <text x="38" y="50" fill="#39d353" font-size="20" font-weight="700">&gt; github.signal --user csheldrick</text>
-<text x="38" y="76" fill="#7d8590" class="small">generated 2026-09-07 06:53 UTC · private + public activity · repository names shown</text>
+<text x="38" y="76" fill="#7d8590" class="small">generated 2026-09-08 06:42 UTC · private + public activity · repository names shown</text>
 <rect x="38" y="108" width="174" height="94" rx="10" fill="#0b1510" stroke="#1f2933"/>
 <text x="54" y="136" fill="#7d8590" class="label">MERGED / 90D</text>
-<text x="54" y="175" fill="#c9d1d9" class="num">676</text>
+<text x="54" y="175" fill="#c9d1d9" class="num">672</text>
 <rect x="228" y="108" width="174" height="94" rx="10" fill="#0b1510" stroke="#1f2933"/>
 <text x="244" y="136" fill="#7d8590" class="label">MERGED PRS</text>
 <text x="244" y="175" fill="#c9d1d9" class="num">1.0k</text>
@@ -26,7 +26,7 @@
 <rect x="38" y="286" width="20" height="20" rx="3" fill="#161b22"><title>2026-06-07: 0 merged PRs</title></rect>
 <rect x="38" y="311" width="20" height="20" rx="3" fill="#161b22"><title>2026-06-08: 0 merged PRs</title></rect>
 <rect x="38" y="336" width="20" height="20" rx="3" fill="#161b22"><title>2026-06-09: 0 merged PRs</title></rect>
-<rect x="38" y="361" width="20" height="20" rx="3" fill="#26a641"><title>2026-06-10: 15 merged PRs</title></rect>
+<rect x="38" y="361" width="20" height="20" rx="3" fill="#161b22"><title>2026-06-10: 0 merged PRs</title></rect>
 <rect x="38" y="386" width="20" height="20" rx="3" fill="#006d32"><title>2026-06-11: 9 merged PRs</title></rect>
 <rect x="38" y="411" width="20" height="20" rx="3" fill="#0e4429"><title>2026-06-12: 5 merged PRs</title></rect>
 <rect x="38" y="436" width="20" height="20" rx="3" fill="#26a641"><title>2026-06-13: 16 merged PRs</title></rect>
@@ -115,7 +115,8 @@
 <rect x="338" y="411" width="20" height="20" rx="3" fill="#006d32"><title>2026-09-04: 10 merged PRs</title></rect>
 <rect x="338" y="436" width="20" height="20" rx="3" fill="#006d32"><title>2026-09-05: 12 merged PRs</title></rect>
 <rect x="363" y="286" width="20" height="20" rx="3" fill="#26a641"><title>2026-09-06: 18 merged PRs</title></rect>
-<rect x="363" y="311" width="20" height="20" rx="3" fill="#0e4429"><title>2026-09-07: 6 merged PRs</title></rect>
+<rect x="363" y="311" width="20" height="20" rx="3" fill="#006d32"><title>2026-09-07: 9 merged PRs</title></rect>
+<rect x="363" y="336" width="20" height="20" rx="3" fill="#006d32"><title>2026-09-08: 8 merged PRs</title></rect>
 <text x="38" y="479" fill="#7d8590" class="small">0</text>
 <rect x="58" y="466" width="13" height="13" rx="2" fill="#161b22"/>
 <rect x="75" y="466" width="13" height="13" rx="2" fill="#0e4429"/>
@@ -126,25 +127,25 @@
 <text x="485" y="244" fill="#39d353" font-size="14" font-weight="700">ALL CODE MIX</text>
 <text x="485" y="266" fill="#7d8590" class="small">recent owned repositories</text>
 <text x="485" y="295" fill="#c9d1d9" class="small">TypeScript</text>
-<text x="960" y="295" text-anchor="end" fill="#7d8590" class="small">38.6%</text>
+<text x="960" y="295" text-anchor="end" fill="#7d8590" class="small">38.2%</text>
 <rect x="485" y="303" width="475" height="6" rx="3" fill="#161b22"/>
-<rect x="485" y="303" width="183" height="6" rx="3" fill="#26a641"/>
+<rect x="485" y="303" width="181" height="6" rx="3" fill="#26a641"/>
 <text x="485" y="337" fill="#c9d1d9" class="small">Java</text>
-<text x="960" y="337" text-anchor="end" fill="#7d8590" class="small">29.5%</text>
+<text x="960" y="337" text-anchor="end" fill="#7d8590" class="small">29.2%</text>
 <rect x="485" y="345" width="475" height="6" rx="3" fill="#161b22"/>
-<rect x="485" y="345" width="140" height="6" rx="3" fill="#26a641"/>
+<rect x="485" y="345" width="138" height="6" rx="3" fill="#26a641"/>
 <text x="485" y="379" fill="#c9d1d9" class="small">C#</text>
-<text x="960" y="379" text-anchor="end" fill="#7d8590" class="small">27.1%</text>
+<text x="960" y="379" text-anchor="end" fill="#7d8590" class="small">27.6%</text>
 <rect x="485" y="387" width="475" height="6" rx="3" fill="#161b22"/>
-<rect x="485" y="387" width="128" height="6" rx="3" fill="#26a641"/>
+<rect x="485" y="387" width="130" height="6" rx="3" fill="#26a641"/>
 <text x="485" y="421" fill="#c9d1d9" class="small">JavaScript</text>
 <text x="960" y="421" text-anchor="end" fill="#7d8590" class="small"> 2.9%</text>
 <rect x="485" y="429" width="475" height="6" rx="3" fill="#161b22"/>
 <rect x="485" y="429" width="13" height="6" rx="3" fill="#26a641"/>
 <text x="485" y="463" fill="#c9d1d9" class="small">Python</text>
-<text x="960" y="463" text-anchor="end" fill="#7d8590" class="small"> 1.0%</text>
+<text x="960" y="463" text-anchor="end" fill="#7d8590" class="small"> 1.2%</text>
 <rect x="485" y="471" width="475" height="6" rx="3" fill="#161b22"/>
-<rect x="485" y="471" width="4" height="6" rx="3" fill="#26a641"/>
+<rect x="485" y="471" width="5" height="6" rx="3" fill="#26a641"/>
 <text x="485" y="505" fill="#c9d1d9" class="small">HTML</text>
 <text x="960" y="505" text-anchor="end" fill="#7d8590" class="small"> 0.9%</text>
 <rect x="485" y="513" width="475" height="6" rx="3" fill="#161b22"/>
@@ -153,17 +154,17 @@
 <text x="38" y="478" fill="#39d353" font-size="14" font-weight="700">RECENTLY ACTIVE REPOS</text>
 <text x="650" y="478" fill="#7d8590" class="small">owned · non-fork · sorted by push</text>
 <text x="38" y="510" fill="#c9d1d9" class="repo">01  Cairn</text>
-<text x="520" y="510" fill="#7d8590" class="small">private · pushed 2026-09-07</text>
+<text x="520" y="510" fill="#7d8590" class="small">private · pushed 2026-09-08</text>
 <text x="860" y="510" fill="#7d8590" class="small">★ 1</text>
-<text x="38" y="541" fill="#c9d1d9" class="repo">02  network-lifecycle-platform</text>
-<text x="520" y="541" fill="#7d8590" class="small">private · pushed 2026-09-07</text>
+<text x="38" y="541" fill="#c9d1d9" class="repo">02  relay</text>
+<text x="520" y="541" fill="#7d8590" class="small">private · pushed 2026-09-08</text>
 <text x="860" y="541" fill="#7d8590" class="small">★ 1</text>
-<text x="38" y="572" fill="#c9d1d9" class="repo">03  relay</text>
-<text x="520" y="572" fill="#7d8590" class="small">private · pushed 2026-09-07</text>
+<text x="38" y="572" fill="#c9d1d9" class="repo">03  network-lifecycle-platform</text>
+<text x="520" y="572" fill="#7d8590" class="small">private · pushed 2026-09-08</text>
 <text x="860" y="572" fill="#7d8590" class="small">★ 1</text>
-<text x="38" y="603" fill="#c9d1d9" class="repo">04  Dianoia</text>
-<text x="520" y="603" fill="#7d8590" class="small">private · pushed 2026-09-05</text>
+<text x="38" y="603" fill="#c9d1d9" class="repo">04  Cast</text>
+<text x="520" y="603" fill="#7d8590" class="small">private · pushed 2026-09-08</text>
 <text x="860" y="603" fill="#7d8590" class="small">★ 1</text>
-<text x="38" y="628" fill="#7d8590" class="small">public repos: 11 · private repos: 164 · 90d merge trace: 676/676 PRs loaded</text>
+<text x="38" y="628" fill="#7d8590" class="small">public repos: 11 · private repos: 164 · 90d merge trace: 672/672 PRs loaded</text>
 <circle cx="952" cy="623" r="5" fill="#39d353"><animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/></circle>
 </svg>
